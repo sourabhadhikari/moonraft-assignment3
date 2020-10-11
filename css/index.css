@@ -20,6 +20,26 @@ header{
     justify-content: center;
     
 }
+.discussions-container{
+    display: flex;
+    align-items: center;
+    
+}
+.line-gradient1{
+    
+    
+    margin-left:20px;
+    width:100%;
+    height:2px;
+    
+    
+    background-image: linear-gradient(to left,white,white );
+    transform: translate(0,15px);
+
+}
+.active{
+    background-color: #453b8c;
+}
 
 .header-mid a{
     text-decoration: none;
@@ -52,6 +72,7 @@ header{
     margin-left:5px;
        
 }
+
 .icon1{
     width:30px;
     height:30px;
@@ -66,6 +87,7 @@ header{
     object-fit: contain;
     margin-left:auto;
     margin-right:10px;
+    
     
 }
 /* .beroe{
@@ -115,7 +137,8 @@ nav{
     width:100%;
     position:relative;
     padding-left:20px;
-    padding-top:30px
+    /* padding-top:30px */
+    /* height:150px; */
 
 }
 .discussions{
@@ -128,13 +151,14 @@ nav{
     line-height: normal;
     letter-spacing: 0.5px;
     color: #ffffff;
-    padding-bottom:33px;
+    margin-top:30px;
+    
 
 
 }
 .Commercial{
     display:inline-block;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Titillium', sans-serif;
     font-size: 22px;
     font-weight: bold;
     font-stretch: normal;
@@ -143,16 +167,12 @@ nav{
     letter-spacing: normal;
     color: #ffffff;
     margin-top:33px;
-    max-width:80%;
+    max-width:85%;
 }
-.dropcircle{
-    
-    margin-left:20px;
-    transform: translate(0px, 5px);
-}
+
 section{
     padding:30px 21px;
-    background:#f1efef;
+    background:#f6f6f6;
 }
 .heading{
     font-family: 'Montserrat', sans-serif;
@@ -197,18 +217,28 @@ section{
     padding-top:0px;
     height: 19px;
 }
+.cell::after{
+    content:'|';
+    padding-left:5px;
+    padding-right:5px;
+
+}
+.cell:last-child::after{
+    content:' ';
+}
+
 .cell-left{
     padding-left:5px;
 }
-.cellborder{
-    border-right:1px solid #929292;
-}
+
 .cellgrid{
     display:flex;
     /* justify-content: center; */
     align-items: center;
     margin-top:10px;
+    flex-wrap: wrap;
 }
+
 .plain-text{
     margin-top:21px;
     font-size:16px;
@@ -222,7 +252,8 @@ section{
     letter-spacing: 0.44px;
 
 }
-section a{
+/* section a{
+    display:inline-block;
     width: 65px;
     height: 19px;
     font-family: 'Open Sans', sans-serif;
@@ -233,8 +264,8 @@ section a{
     line-height: normal;
     letter-spacing: normal;
     color: #5d52a8;
-    margin-top:9px;
-}
+    margin-top:12px;
+} */
 .gap{
     background:#b1aaaa;
     height:15px;
@@ -253,7 +284,9 @@ aside{
     display:none;
 }
 section a{
-    width: 65px;
+    display:inline-block;
+    margin-top:12px;
+    
     height: 19px;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
@@ -265,7 +298,9 @@ section a{
     color: #5d52a8;
 }
 article a{
-    width: 65px;
+    display:inline-block;
+    margin-top:12px;
+    
     height: 19px;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
@@ -277,9 +312,12 @@ article a{
     color: #5d52a8;
 }
 
-@media (min-width:1200px){
+@media (min-width:1280px){
     header{
         height:54px;
+    }
+    .line-gradient1{
+        display: none;
     }
     .header-right{
         margin-left:auto;
@@ -302,6 +340,25 @@ article a{
         padding-left:14.4px;
         padding-top:14px;
        
+    }
+    .discussions{
+        margin-top:55px;
+        font-size:18px;
+        margin-left:40px;
+        
+    }
+    .topic{
+        height:189px;
+    }
+    .Commercial{
+        margin-left:40px;
+        font-size:46px;
+        margin-bottom:28px;
+    }
+    .dropcircle{
+    
+        margin-left:20px;
+        transform: translate(0px, 0px);
     }
     .header-left{
         display:none;
@@ -357,20 +414,24 @@ article a{
         display:none;
     }
     .user{
-        display:inline;
+        display:inline-block;
+        margin-right:10px;
     }
     .circle{
         border:2px solid #ffffff;
     
-    width:60px;
-    border-radius: 50%;
-    padding:4px 18px;
-    font-size:22px;
-    margin-left:10px;
+        width:60px;
+        border-radius: 50%;
+        padding:4px 18px;
+        font-size:22px;
+        margin-left:10px;
     }
     .hi{
+        display: inline-block;
         padding-left:5px;
+        margin-right:10px;
     }
+  
     .user{
         text-decoration: none;
         font-family: 'Open Sans', sans-serif;
@@ -396,7 +457,7 @@ article a{
         padding-bottom:2.5px;
         margin-left:auto;
         margin-right:15px;
-        padding-left:4px;
+        padding-left:5px;
         padding-right:4px;
 
         
@@ -429,6 +490,7 @@ article a{
     }
     article{
         padding:30px 40px;
+        width:61.56%;
         background:#ffffff;
         
     }
@@ -510,7 +572,9 @@ article a{
         padding-right:20px;
     }
     aside a{
-        width: 65px;
+        display:inline-block;
+        margin-top:12px;
+        
         height: 19px;
         font-family: 'Open Sans', sans-serif;
         font-size: 14px;
@@ -534,8 +598,25 @@ article a{
     .removable{
         display:none;
     }
+    .line-gradient{
+        display:inline-block;
+        margin-top:9px;
+        margin-left:15px;
+        width:70%;
+        height:2px;
+        background-image: linear-gradient(to left, rgba(146, 146, 146, 0), #929292 );
+
+    }
+    .section-heading{
+        display: flex;
+        align-content: center;
+        
+    }
+    .drop1{
+        transform: translate(2px,-2px);
+    }
 }
-@media (min-width:780px) and (max-width:1199px){
+@media (min-width:780px) and (max-width:1279px){
     header{
         height:54px;
     }
@@ -615,16 +696,20 @@ article a{
         display:none;
     }
     .user{
-        display:inline;
+        display:inline-block;
+        margin-right:12px;
+    }
+    .drop1{
+        transform: translate(2px,-2px);
     }
     .circle{
         border:2px solid #ffffff;
     
-    width:60px;
-    border-radius: 50%;
-    padding:4px 18px;
-    font-size:22px;
-    margin-left:10px;
+        width:60px;
+        border-radius: 50%;
+        padding:4px 18px;
+        font-size:22px;
+        margin-left:10px;
     }
     .hi{
         padding-left:5px;
@@ -674,6 +759,15 @@ article a{
         letter-spacing: normal;
         color: #ffffff;
     }
+    .dropcircle{
+    
+        margin-left:20px;
+        transform: translate(0px, 5px);
+    }
+    .Commercial{
+        font-size: 2rem;
+    }
+   
 
 }
 @media (max-width:779px){
@@ -682,5 +776,11 @@ article a{
         justify-content: center;
         flex: 1;
     }
-}
+    
 
+}
+@media (min-width:540px) and (max-width:779px){
+    .dropcircle{
+        transform: translate(10px, 5px);
+    }
+}

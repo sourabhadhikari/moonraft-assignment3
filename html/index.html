@@ -19,10 +19,10 @@
             </div>
             <div class="header-right">
                 <input type="text" placeholder="Search">
-                <a href="#" class="user" style="border-right:1px solid #433c72; padding-right:5px"><span class="circle" ></span><span class="hi">Hi John!</span></a>
-                <img class="icon2" src="/assets/search-bar-icon.png" alt="search">
+                <a href="#" class="user" style="border-right:1px solid #433c72; padding-right:5px"><span class="circle" ></span><span class="hi">Hi John!</span><img class="drop1" src="/assets/caret-white-big.png" alt="dropdown"></a>
+                <img class="icon2" src="/assets/search-bar-icon.svg" alt="search">
                 
-                <a href="#"><p class="question" >?</p><span class="askBeroe">Ask Beroe</span></a></li>
+                <p class="question" >?</p><span class="askBeroe">Ask Beroe</span>
             </div>
 
         
@@ -30,7 +30,7 @@
     <nav class="navBar">
         <ul class="nav">
             <li ><a  href="#">DashBoard</a></li>
-            <li><a href="#">Discussions</a></li>
+            <li class="active"><a href="#">Discussions</a></li>
             <li><a href="#">Interesting Reads</a></li>
             <li><a href="#">Customized Reports</a></li>
             
@@ -45,43 +45,50 @@
         </ul>
     </div>
     <div class="topic">
-        <span class="discussions">DISCUSSIONS</span><br>
-        <span class="Commercial">Commercial and Remainder items <span class="removable">+ 5 others</span></span>
+        <div class="discussions-container">
+            <span class="discussions">DISCUSSIONS</span><span class="line-gradient1"></span><br>
+        </div>
+        
+        <span class="Commercial">Commercial & Remainder items <span class="removable">+ 5 others</span></span>
         <img class="dropcircle" src="/assets/caret-circle-white.png" alt="dropcircle">
     </div>
     <section>
-        <p class="heading">STARTED BY ME</p>
+        <div class="section-heading">
+            <p class="heading">STARTED BY ME</p>
+            <p class="line-gradient"></p>
+        </div>
+
         <p class="comm">COMMERCIAL AND REMAINDER ITEMS</p>
         <span class="text">Pricing should be more transparent in IT and Hardware.</span>
         <img class="context"src="/assets/context.png" alt="context">
         <div class="cellgrid">
-            <span class="cell cellborder">Josh-Man56</span><span class="cell cellborder">2 Aug 2016</span><span class="cell cellborder cell-left"><b><i class="fa fa-comment-alt fa-fw"></i></b>0</span><span class="cell cellborder cell-left"><b><i class="fa fa-user-friends fa-fw"></i></b>2</span>
+            <span class="cell ">2 Aug 2016</span><span class="cell  cell-left"><b><i class="fa fa-comment-alt fa-fw"></i></b>1.5 K</span><span class="cell  cell-left"><b><i class="fa fa-user-friends fa-fw"></i></b>200</span>
             <img class="context2" src="/assets/context.png" alt="context">
         </div>
         <p class="plain-text">
             I totally agree. It's very hard to know exactly what your are paying for.
         </p>
         <div class="cellgrid">
-            <span class="cell cellborder">RobinM56</span><span class="cell cellborder">2 Aug 2016</span>
+            <span class="cell ">Josh-Man56</span><span class="cell ">2 Aug 2016</span>
         </div>
-        <a href="#">Follow</a>
+        
 
         <!-- <p class="heading">STARTED BY ME</p> -->
         <p class="comm" style="margin-top:56px">COMMERCIAL AND REMAINDER ITEMS</p>
         <span class="text">Pricing should be more transparent in IT and Hardware.</span>
         <img class="context"src="/assets/context.png" alt="context">
         <div class="cellgrid">
-            <span class="cell cellborder">Josh-Man56</span><span class="cell cellborder">2 Aug 2016</span><span class="cell cellborder cell-left"><b><i class="fa fa-comment-alt fa-fw"></i></b>0</span><span class="cell cellborder cell-left"><b><i class="fa fa-user-friends fa-fw"></i></b>2</span>
+            <span class="cell ">2 Aug 2016</span><span class="cell  cell-left"><b><i class="fa fa-comment-alt fa-fw"></i></b>1.5 K</span><span class="cell  cell-left"><b><i class="fa fa-user-friends fa-fw"></i></b>200</span>
             <img class="context2" src="/assets/context.png" alt="context">
         </div>
         <p class="plain-text">
             I totally agree. It's very hard to know exactly what your are paying for.
         </p>
         <div class="cellgrid">
-            <span class="cell cellborder">RobinM56</span><span class="cell cellborder">2 Aug 2016</span>
+            <span class="cell ">Josh-Man56</span><span class="cell ">2 Aug 2016</span>
         </div>
-        <a href="#">Follow</a><br>
-        <a href="#">More</a>
+        
+        <a class="sub-link"href="#">More</a>
         <img class="drop" src="/assets/caret-small.png" alt="dropdown">
 
     </section>
@@ -89,37 +96,40 @@
 
     </div>
     <article>
-        <p class="heading">I'M FOLLOWING</p>
+        <div class="section-heading">
+            <p class="heading">I'M FOLLOWING</p>
+            <p class="line-gradient"></p>
+        </div>
         <p class="comm">COMMERCIAL AND REMAINDER ITEMS</p>
         <span class="text">Pricing should be more transparent in IT and Hardware.</span>
         <img class="context"src="/assets/context.png" alt="context">
         <div class="cellgrid">
-            <span class="cell cellborder">Josh-Man56</span><span class="cell cellborder">2 Aug 2016</span><span class="cell cellborder cell-left"><b><i class="fa fa-comment-alt fa-fw"></i></b>0</span><span class="cell cellborder cell-left"><b><i class="fa fa-user-friends fa-fw"></i></b>2</span>
+            <span class="cell ">2 Aug 2016</span><span class="cell  cell-left"><b><i class="fa fa-comment-alt fa-fw"></i></b>1.5 K</span><span class="cell  cell-left"><b><i class="fa fa-user-friends fa-fw"></i></b>200</span>
             <img class="context2" src="/assets/context.png" alt="context">
         </div>
         <p class="plain-text">
             I totally agree. It's very hard to know exactly what your are paying for.
         </p>
         <div class="cellgrid">
-            <span class="cell cellborder">RobinM56</span><span class="cell cellborder">2 Aug 2016</span>
+            <span class="cell ">Josh-Man56</span><span class="cell ">2 Aug 2016</span>
         </div>
-        <a href="#">Follow</a>
+        <a href="#">Unfollow</a>
 
         <!-- <p class="heading">STARTED BY ME</p> -->
         <p class="comm" style="margin-top:56px">COMMERCIAL AND REMAINDER ITEMS</p>
         <span class="text">Pricing should be more transparent in IT and Hardware.</span>
         <img class="context"src="/assets/context.png" alt="context">
         <div class="cellgrid">
-            <span class="cell cellborder">Josh-Man56</span><span class="cell cellborder">2 Aug 2016</span><span class="cell cellborder cell-left"><b><i class="fa fa-comment-alt fa-fw"></i></b>0</span><span class="cell cellborder cell-left"><b><i class="fa fa-user-friends fa-fw"></i></b>2</span>
+            <span class="cell ">2 Aug 2016</span><span class="cell  cell-left"><b><i class="fa fa-comment-alt fa-fw"></i></b>1.5 K</span><span class="cell  cell-left"><b><i class="fa fa-user-friends fa-fw"></i></b>200</span>
             <img class="context2" src="/assets/context.png" alt="context">
         </div>
         <p class="plain-text">
             I totally agree. It's very hard to know exactly what your are paying for.
         </p>
         <div class="cellgrid">
-            <span class="cell cellborder">RobinM56</span><span class="cell cellborder">2 Aug 2016</span>
+            <span class="cell ">Josh-Man56</span><span class="cell ">2 Aug 2016</span>
         </div>
-        <a href="#">Follow</a><br>
+        <a href="#">Unfollow</a><br>
         <a href="#">More</a>
         <img class="drop" src="/assets/caret-small.png" alt="dropdown">
     </article>
@@ -132,32 +142,33 @@
         <span class="text">Pricing should be more transparent in IT and Hardware.</span>
         <img class="context"src="/assets/context.png" alt="context">
         <div class="cellgrid">
-            <span class="cell cellborder">Josh-Man56</span><span class="cell cellborder">2 Aug 2016</span><span class="cell cellborder cell-left"><b><i class="fa fa-comment-alt fa-fw"></i></b>0</span><span class="cell cellborder cell-left"><b><i class="fa fa-user-friends fa-fw"></i></b>2</span>
+            <span class="cell ">2 Aug 2016</span><span class="cell  cell-left"><b><i class="fa fa-comment-alt fa-fw"></i></b>1.5 K</span><span class="cell  cell-left"><b><i class="fa fa-user-friends fa-fw"></i></b>200</span>
             <img class="context2" src="/assets/context.png" alt="context">
         </div>
         <p class="plain-text">
             I totally agree. It's very hard to know exactly what your are paying for.
         </p>
         <div class="cellgrid">
-            <span class="cell cellborder">RobinM56</span><span class="cell cellborder">2 Aug 2016</span>
+            <span class="cell ">Josh-Man56</span><span class="cell ">2 Aug 2016</span>
         </div>
-        <a href="#">Follow</a>
+        <a href="#">Unfollow</a>
 
         <!-- <p class="heading">STARTED BY ME</p> -->
         <p class="comm" style="margin-top:56px">COMMERCIAL AND REMAINDER ITEMS</p>
         <span class="text">Pricing should be more transparent in IT and Hardware.</span>
         <img class="context"src="/assets/context.png" alt="context">
         <div class="cellgrid">
-            <span class="cell cellborder">Josh-Man56</span><span class="cell cellborder">2 Aug 2016</span><span class="cell cellborder cell-left"><b><i class="fa fa-comment-alt fa-fw"></i></b>0</span><span class="cell cellborder cell-left"><b><i class="fa fa-user-friends fa-fw"></i></b>2</span>
+            <span class="cell ">2 Aug 2016</span><span class="cell  cell-left"><b><i class="fa fa-comment-alt fa-fw"></i></b>1.5 K</span><span class="cell  cell-left"><b><i class="fa fa-user-friends fa-fw"></i></b>200</span>
             <img class="context2" src="/assets/context.png" alt="context">
         </div>
         <p class="plain-text">
             I totally agree. It's very hard to know exactly what your are paying for.
         </p>
         <div class="cellgrid">
-            <span class="cell cellborder">RobinM56</span><span class="cell cellborder">2 Aug 2016</span>
+            <span class="cell ">Josh-Man56</span><span class="cell ">2 Aug 2016</span>
         </div>
-        <a href="#">Follow</a><br>
+        
+        <a href="#">Unfollow</a><br>
         <a href="#">More</a>
         <img class="drop" src="/assets/caret-small.png" alt="dropdown">
 
@@ -179,14 +190,14 @@
         <div class="text1">Pricing should be more transparent in IT and Hardware.</div>
         
         <div class="cellgrid">
-            <span class="cell cellborder">Josh-Man56</span><span class="cell cellborder">2 Aug 2016</span><span class="cell cellborder cell-left"><b><i class="fa fa-comment-alt fa-fw"></i></b>0</span><span class="cell cellborder cell-left"><b><i class="fa fa-user-friends fa-fw"></i></b>2</span>
+            <span class="cell ">Josh-Man56</span><span class="cell ">2 Aug 2016</span><span class="cell  cell-left"><b><i class="fa fa-comment-alt fa-fw"></i></b>0</span><span class="cell  cell-left"><b><i class="fa fa-user-friends fa-fw"></i></b>2</span>
             <img class="context2" src="/assets/context.png" alt="context">
         </div>
         <p class="plain-text">
             I totally agree. It's very hard to know exactly what your are paying for.
         </p>
         <div class="cellgrid">
-            <span class="cell cellborder">RobinM56</span><span class="cell cellborder">2 Aug 2016</span>
+            <span class="cell ">RobinM56</span><span class="cell ">2 Aug 2016</span>
         </div>
         <a href="#">Follow</a> -->
         <div class="asidecontent">
@@ -195,14 +206,14 @@
             <span class="text">Pricing should be more transparent in IT and Hardware.</span>
         
             <div class="cellgrid">
-                <span class="cell cellborder">Josh-Man56</span><span class="cell cellborder">2 Aug 2016</span><span class="cell cellborder cell-left"><b><i class="fa fa-comment-alt fa-fw"></i></b>0</span><span class="cell cellborder cell-left"><b><i class="fa fa-user-friends fa-fw"></i></b>2</span>
+                <span class="cell ">Josh-Man56</span><span class="cell ">2 Aug 2016</span><span class="cell  cell-left"><b><i class="fa fa-comment-alt fa-fw"></i></b>0</span><span class="cell  cell-left"><b><i class="fa fa-user-friends fa-fw"></i></b>2</span>
                 <img class="context2" src="/assets/context.png" alt="context">
             </div>
             <p class="plain-text">
                 I totally agree. It's very hard to know exactly what your are paying for.
             </p>
             <div class="cellgrid">
-                <span class="cell cellborder">RobinM56</span><span class="cell cellborder">2 Aug 2016</span>
+                <span class="cell ">RobinM56</span><span class="cell ">2 Aug 2016</span>
             </div>
             <a href="#" >Follow</a>
             <p style="margin-bottom:20px"></p>
@@ -210,14 +221,14 @@
             <span class="text">Pricing should be more transparent in IT and Hardware.</span>
         
             <div class="cellgrid">
-                <span class="cell cellborder">Josh-Man56</span><span class="cell cellborder">2 Aug 2016</span><span class="cell cellborder cell-left"><b><i class="fa fa-comment-alt fa-fw"></i></b>0</span><span class="cell cellborder cell-left"><b><i class="fa fa-user-friends fa-fw"></i></b>2</span>
+                <span class="cell ">Josh-Man56</span><span class="cell ">2 Aug 2016</span><span class="cell  cell-left"><b><i class="fa fa-comment-alt fa-fw"></i></b>0</span><span class="cell  cell-left"><b><i class="fa fa-user-friends fa-fw"></i></b>2</span>
                 <img class="context2" src="/assets/context.png" alt="context">
             </div>
             <p class="plain-text">
                 I totally agree. It's very hard to know exactly what your are paying for.
             </p>
             <div class="cellgrid">
-                <span class="cell cellborder">RobinM56</span><span class="cell cellborder">2 Aug 2016</span>
+                <span class="cell ">RobinM56</span><span class="cell ">2 Aug 2016</span>
             </div>
             <a href="#">Follow</a>
         </div>
@@ -227,14 +238,14 @@
             <span class="text">Pricing should be more transparent in IT and Hardware.</span>
         
             <div class="cellgrid">
-                <span class="cell cellborder">Josh-Man56</span><span class="cell cellborder">2 Aug 2016</span><span class="cell cellborder cell-left"><b><i class="fa fa-comment-alt fa-fw"></i></b>0</span><span class="cell cellborder cell-left"><b><i class="fa fa-user-friends fa-fw"></i></b>2</span>
+                <span class="cell ">Josh-Man56</span><span class="cell ">2 Aug 2016</span><span class="cell  cell-left"><b><i class="fa fa-comment-alt fa-fw"></i></b>0</span><span class="cell  cell-left"><b><i class="fa fa-user-friends fa-fw"></i></b>2</span>
                 <img class="context2" src="/assets/context.png" alt="context">
             </div>
             <p class="plain-text">
                 I totally agree. It's very hard to know exactly what your are paying for.
             </p>
             <div class="cellgrid">
-                <span class="cell cellborder">RobinM56</span><span class="cell cellborder">2 Aug 2016</span>
+                <span class="cell ">RobinM56</span><span class="cell ">2 Aug 2016</span>
             </div>
             <a href="#" >Follow</a>
             <p style="margin-bottom:20px"></p>
@@ -242,16 +253,38 @@
             <span class="text">Pricing should be more transparent in IT and Hardware.</span>
         
             <div class="cellgrid">
-                <span class="cell cellborder">Josh-Man56</span><span class="cell cellborder">2 Aug 2016</span><span class="cell cellborder cell-left"><b><i class="fa fa-comment-alt fa-fw"></i></b>0</span><span class="cell cellborder cell-left"><b><i class="fa fa-user-friends fa-fw"></i></b>2</span>
+                <span class="cell ">Josh-Man56</span><span class="cell ">2 Aug 2016</span><span class="cell  cell-left"><b><i class="fa fa-comment-alt fa-fw"></i></b>0</span><span class="cell  cell-left"><b><i class="fa fa-user-friends fa-fw"></i></b>2</span>
                 <img class="context2" src="/assets/context.png" alt="context">
             </div>
             <p class="plain-text">
                 I totally agree. It's very hard to know exactly what your are paying for.
             </p>
             <div class="cellgrid">
-                <span class="cell cellborder">RobinM56</span><span class="cell cellborder">2 Aug 2016</span>
+                <span class="cell ">RobinM56</span><span class="cell ">2 Aug 2016</span>
             </div>
             <a href="#">Follow</a>
+        </div>
+        <div class="asidecontent">
+            <p class="heading">ACTIVITIES IN OTHER CATEGORIES</p>
+
+            <span class="text">Engineering and Construction</span>
+          
+            <div>
+                <div class="cellgrid">
+                    <span class="cell ">11 new replies</span><span class="cell ">2 Trending discussions</span><span class="cell ">9 discussions</span>
+                </div>
+            </div>
+
+            <div>
+                <span class="text">IT & Software</span>
+            </div>
+          
+            <div class="cellgrid">
+                <span class="cell ">11 new replies</span><span class="cell ">2 Trending discussions</span><span class="cell ">9 discussions</span>
+            </div>
+   
+            <p style="margin-bottom:20px"></p>
+          
         </div>
     </aside>
 </body>
